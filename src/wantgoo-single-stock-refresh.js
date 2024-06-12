@@ -14,10 +14,10 @@
 // ==/UserScript==
 
 (function () {
-  "use strict";
-  window.addEventListener("focus", () => {
-      const btn1 = document.querySelector("#refresh")
-      if (btn1) btn1.click()
-  });
-  // Your code here...
+    "use strict";
+    window.addEventListener("focus", () => {
+        const btn1 = document.querySelector("#refresh");
+        if (btn1) btn1.click();
+    });
+    // Your code here...
 })();
