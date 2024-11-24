@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Youtube Get Dislike
-// @version      0.2
+// @version      0.3
 // @description  Get Dislike Amount.
 // @license      MIT
 // @homepageURL  https://github.com/willy67k/tampermonkey-userscripts
@@ -28,7 +28,7 @@
         if (!urlParams) return;
 
         const inter = setInterval(() => {
-            const disBtn = document.querySelector("#segmented-dislike-button button");
+            const disBtn = document.querySelector("dislike-button-view-model button");
             if (disBtn) {
                 clearInterval(inter);
                 fetch(`https://returnyoutubedislikeapi.com/Votes?videoId=${urlParams}`)
